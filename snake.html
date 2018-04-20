@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>snake</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        #background {
+            width: 500px;
+            height: 500px;
+            background-color: #000;
+            font-size: 0;
+        }
+
+        .cell {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: solid 1px #000;
+        }
+
+        .snake-node {
+            background-color: #56A36C;
+        }
+
+        .food-node {
+            background-color: #E9F01D;
+        }
+
+        .console {
+            background-color: #969696;
+            width: 500px;
+            height: 100px;
+            display:table-cell;
+            vertical-align:middle;
+            margin: 0 auto;
+        }
+
+        .button {
+            width: 100px;
+            height: 40px;
+            background-color: #A0522D;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .pause,
+        .continue {
+            float: left;
+            margin-left: 50px;
+        }
+
+        .start,
+        .stop {
+            float: right;
+            margin-right: 50px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .score-box {
+            float: left;
+            margin-left: 50px;
+            width: 100px;
+            height: 40px;
+            background-color: #6B6B6B;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .score-box span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #CD0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="background"></div>
+        <div class="console">
+            <button class="button pause" id="pause">pause</button>
+            <button class="button continue hide" id="continue">continue</button>
+            <div class="score-box"><span id="score-box"></span></div>
+            <button class="button start" id="start">start</button>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
